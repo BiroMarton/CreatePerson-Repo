@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CreateClass
 {
-    class Employee : Person
+    class Employee : Person, ICloneable
 
     {
         private int salary;
@@ -38,6 +38,28 @@ namespace CreateClass
         {
             return base.ToString() + String.Format(", salary: {0}, profession: {1}, room: {2}"
                 ,salary,profession,Room.Number);
+        }
+
+        public object Clone()
+        {
+            Employee newEmployee = (Employee)this.MemberwiseClone();
+            newEmployee.Room = new Room(Room.Number);
+            return newEmployee;
+        }
+
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee Kovacs = new Employee("Géza", DateTime.Now, 1000, "léhűtő");
+            Kovacs.Room = new Room(111);
+            Employee Kovacs2 = (Employee)Kovacs.Clone();
+            Kovacs2.Room.Number = 112;
+            Console.WriteLine(Kovacs.ToString());
+            Console.WriteLine(Kovacs2.ToString());
+            Console.ReadKey();
         }
     }
 }

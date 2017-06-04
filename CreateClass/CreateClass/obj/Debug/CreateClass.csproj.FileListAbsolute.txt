@@ -1,0 +1,6 @@
+D:\GitRepo\CreatePerson-Repo\CreateClass\CreateClass\obj\Debug\CreateClass.csprojResolveAssemblyReference.cache
+D:\GitRepo\CreatePerson-Repo\CreateClass\CreateClass\bin\Debug\CreateClass.exe.config
+D:\GitRepo\CreatePerson-Repo\CreateClass\CreateClass\bin\Debug\CreateClass.exe
+D:\GitRepo\CreatePerson-Repo\CreateClass\CreateClass\bin\Debug\CreateClass.pdb
+D:\GitRepo\CreatePerson-Repo\CreateClass\CreateClass\obj\Debug\CreateClass.exe
+D:\GitRepo\CreatePerson-Repo\CreateClass\CreateClass\obj\Debug\CreateClass.pdb

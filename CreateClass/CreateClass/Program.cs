@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace CreateClass
 {
-    class Perosn
+    class Person
     {
         private string name;
 
         public string Name
         {
-            get { return name }
-            set { name = value }
+            get { return name> }
+            set { name = value; }
         }
 
         private DateTime birthDate;
 
         public DateTime BirthDate
         {
-            get { return birthDate}
-            set { birthDate = value }
+            get { return birthDate; }
+            set { birthDate = value; }
         }
 
-        public Perosn(string name, DateTime birthDate)
+        public Person(string name, DateTime birthDate)
         {
 
             this.name = name;
